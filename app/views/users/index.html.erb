@@ -1,9 +1,18 @@
 <h1>All users</h1>
 
-<ul>
+<div class="divTable">
+  <div class="divTableBody">
+    <div class="divTableRow">
+      <div class="divTableCell">User</div>
+      <div class="divTableCell">To-dos count</div>
+    </div>
   <% @users.each do |user| %>
-    <h2>User name: <%= user.name %></h2>
-    <p>Email: <%= user.email %></p>
-    <p>Tasks to-do: </p>
+    <div class="divTableRow">
+      <div class="divTableCell"><%= link_to user.name, user_path(user)  %></div>
+      <div class="divTableCell">X</div>
+    </div>
   <% end %>
-</ul>
+  </div>
+</div>
+
+<a href="/users/new/">Add a new user</a>
