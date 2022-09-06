@@ -17,8 +17,8 @@ Tasks to do by <%= @user.name %>:<br>
   </div>
 </div>
 <%= link_to "Add a new task for #{@user.name}", new_user_todo_path(@user) %><br>
-<%= link_to "Edit", edit_user_path(@user) %> |
-<%= link_to "Delete",
+<%= link_to "Edit user", edit_user_path(@user) %> |
+<%= link_to "Delete user",
   user_path(@user),
   data: { method: :delete, confirm: "Are you sure?" }
 %><br>

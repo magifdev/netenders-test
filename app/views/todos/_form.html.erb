@@ -1,5 +1,5 @@
 <%= simple_form_for([@user, @todo]) do |f| %>
   <%= f.input :task_name %>
-  <%= f.input :status, selected: [ "todo" ], collection: [ "todo", "doing", "done" ] %>
+  <%= f.input :status, collection: [ "todo", "doing", "done" ] %>
   <%= f.submit %>
 <% end %>
