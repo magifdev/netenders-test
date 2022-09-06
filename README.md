@@ -1,24 +1,10 @@
-# README
+# netenders-test README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project made for a technical interview by Marc Gibert
 
-Things you may want to cover:
 
-* Ruby version
+* Ruby version (ruby 2.7.4p191)
 
-* System dependencies
+* Run 'rails db:seed' to prepopulate de database with users
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Run 'rspec spec/models/user_spec.rb' to run the test file
