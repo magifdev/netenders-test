@@ -3,7 +3,7 @@
 Project made for a technical interview by Marc Gibert
 
 
-* Ruby version (ruby 2.7.4p191)
+* Ruby version (ruby 3.1.2)
 
 * Run 'rails db:seed' to prepopulate de database with users
 
