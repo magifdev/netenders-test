@@ -1,0 +1,7 @@
+<h1>Create a new task for</h1>
+
+<%= simple_form_for([@user, @todo]) do |f| %>
+  <%= f.input :task_name %>
+  <%= f.input :status, priority: [ "todo" ], collection: [ "todo", "doing", "done" ] %>
+  <%= f.submit %>
+<% end %>

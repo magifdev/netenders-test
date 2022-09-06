@@ -5,5 +5,5 @@ class User < ApplicationRecord
             presence: true,
             format: { with: /\A\S+@.+\.\S+\z/,
                       message: 'Please enter a correct email' }
-  has_many :todo
+  has_many :todo, dependent: :destroy
 end

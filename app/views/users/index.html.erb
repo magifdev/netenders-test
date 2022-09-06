@@ -9,7 +9,7 @@
   <% @users.each do |user| %>
     <div class="divTableRow">
       <div class="divTableCell"><%= link_to user.name, user_path(user)  %></div>
-      <div class="divTableCell">X</div>
+      <div class="divTableCell"><%= user.todo.count %></div>
     </div>
   <% end %>
   </div>

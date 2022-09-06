@@ -2,7 +2,22 @@
 
 Tasks to do by <%= @user.name %>:<br>
 
+<div class="divTable">
+  <div class="divTableBody">
+    <div class="divTableRow">
+      <div class="divTableCell">Task</div>
+      <div class="divTableCell">Status</div>
+    </div>
+  <% @todo.each do |todo| %>
+    <div class="divTableRow">
+      <div class="divTableCell"><%= todo.task_name %></div>
+      <div class="divTableCell"><%= todo.status %></div>
+    </div>
+  <% end %>
+  </div>
+</div>
 
+<%= link_to "Add a new task for #{@user.name}", new_user_todo_path(@user) %><br>
 <%= link_to "Edit", edit_user_path(@user) %> |
 <%= link_to "Delete",
   user_path(@user),
